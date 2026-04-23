@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Disallow crawling of system/editor files if ever deployed
+Disallow: /.vscode/
+
+# Resume PDF is allowed and may appear in results
+Allow: /Resume%20-%20Aakash%20Subedi.pdf
+
+Sitemap: https://www.aakashsubedi.com/sitemap.xml

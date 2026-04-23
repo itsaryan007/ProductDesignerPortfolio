@@ -1,0 +1,809 @@
+
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UI Gallery — Interface Work &amp; Visual Systems | Aakash Subedi</title>
+<meta name="description" content="A curated selection of interface work, visual systems, and screen-level decisions — from product UI to exploratory illustration by Aakash Subedi."/>
+<meta name="author" content="Aakash Subedi"/>
+<meta name="robots" content="index,follow,max-image-preview:large"/>
+<meta name="theme-color" content="#0035c5"/>
+<link rel="canonical" href="https://www.aakashsubedi.com/gallery.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Aakash Subedi"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:title" content="UI Gallery — Interface Work &amp; Visual Systems"/>
+<meta property="og:description" content="A curated selection of interface work, visual systems, and screen-level decisions — from product UI to exploratory illustration."/>
+<meta property="og:url" content="https://www.aakashsubedi.com/gallery.html"/>
+<meta property="og:image" content="https://www.aakashsubedi.com/OG.png"/>
+<meta property="og:image:secure_url" content="https://www.aakashsubedi.com/OG.png"/>
+<meta property="og:image:type" content="image/png"/>
+<meta property="og:image:width" content="2848"/>
+<meta property="og:image:height" content="1502"/>
+<meta property="og:image:alt" content="Aakash Subedi UI Gallery — interface work"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="UI Gallery — Aakash Subedi"/>
+<meta name="twitter:description" content="A curated selection of interface work, visual systems, and screen-level decisions."/>
+<meta name="twitter:image" content="https://www.aakashsubedi.com/OG.png"/>
+<meta name="twitter:image:alt" content="Aakash Subedi UI Gallery — interface work"/>
+<link rel="icon" type="image/png" sizes="any" href="/Logo.png"/>
+<link rel="apple-touch-icon" href="/Logo.png"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link rel="preconnect" href="https://cdn.tailwindcss.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-container": "#0047ff",
+              "on-background": "#1c1b1b",
+              "secondary-container": "#e2e2e5",
+              "on-tertiary-fixed-variant": "#203e9e",
+              "on-surface": "#1c1b1b",
+              "secondary": "#5d5e61",
+              "on-surface-variant": "#434657",
+              "surface-container": "#f0edec",
+              "surface-container-low": "#f6f3f2",
+              "on-primary-fixed": "#001257",
+              "surface-dim": "#dcd9d9",
+              "on-tertiary-container": "#d3d9ff",
+              "surface-container-lowest": "#ffffff",
+              "outline-variant": "#c4c5da",
+              "surface-container-high": "#ebe7e7",
+              "on-primary-fixed-variant": "#0033c0",
+              "tertiary-fixed-dim": "#b7c4ff",
+              "on-tertiary": "#ffffff",
+              "error-container": "#ffdad6",
+              "primary-fixed-dim": "#b9c3ff",
+              "on-primary-container": "#d4d9ff",
+              "inverse-primary": "#b9c3ff",
+              "surface-variant": "#e5e2e1",
+              "inverse-surface": "#313030",
+              "secondary-fixed": "#e2e2e5",
+              "primary-fixed": "#dde1ff",
+              "background": "#fcf9f8",
+              "on-tertiary-fixed": "#001551",
+              "tertiary": "#2240a0",
+              "on-secondary-fixed": "#1a1c1e",
+              "surface-tint": "#0046fa",
+              "secondary-fixed-dim": "#c6c6c9",
+              "surface": "#fcf9f8",
+              "primary": "#0035c5",
+              "error": "#ba1a1a",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed": "#dce1ff",
+              "tertiary-container": "#3e59b9",
+              "on-secondary-fixed-variant": "#454749",
+              "surface-bright": "#fcf9f8",
+              "on-primary": "#ffffff",
+              "on-secondary-container": "#636467",
+              "outline": "#747688",
+              "on-error-container": "#93000a",
+              "on-error": "#ffffff",
+              "inverse-on-surface": "#f3f0ef",
+              "surface-container-highest": "#e5e2e1"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .hero-title-bleed { letter-spacing: -0.04em; }
+        .gallery-image-wrapper { position: relative; overflow: hidden; }
+        .gallery-image-wrapper::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.02);
+            pointer-events: none;
+        }
+        .skip-to-content { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+        .skip-to-content:focus { position: fixed; left: 1rem; top: 1rem; width: auto; height: auto; padding: 0.75rem 1rem; background: #0035c5; color: #ffffff; font-weight: 700; border-radius: 0.5rem; z-index: 1000; }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.aakashsubedi.com/gallery.html#webpage",
+      "url": "https://www.aakashsubedi.com/gallery.html",
+      "name": "UI Gallery — Aakash Subedi",
+      "description": "A curated selection of interface work, visual systems, and screen-level decisions — from product UI to exploratory illustration.",
+      "isPartOf": { "@id": "https://www.aakashsubedi.com/#website" },
+      "about": { "@id": "https://www.aakashsubedi.com/#person" },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.aakashsubedi.com/" },
+        { "@type": "ListItem", "position": 2, "name": "UI Gallery", "item": "https://www.aakashsubedi.com/gallery.html" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased overflow-x-hidden">
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
+<!-- TopNavBar -->
+<header>
+<nav aria-label="Primary" class="fixed top-0 left-0 right-0 w-full z-50 bg-[#fcf9f8]/80 dark:bg-[#1c1b1b]/80 backdrop-blur-xl">
+<div class="max-w-7xl mx-auto w-full px-5 sm:px-8 lg:px-12 flex justify-between items-center py-4 md:py-6">
+<a href="index.html" aria-label="Aakash Subedi home" class="flex items-center no-underline">
+<img src="Logo-wh.png" alt="Aakash Subedi" class="h-8 md:h-9 w-auto object-contain"/>
+</a>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#1c1b1b]/60 dark:text-[#fcf9f8]/60 font-medium font-['Manrope'] hover:text-[#0047FF] transition-colors duration-300" href="index.html">Work</a>
+<a class="text-[#0047FF] font-bold border-b-2 border-[#0047FF] pb-1 transition-colors duration-300" href="gallery.html">UI Gallery</a>
+<a class="text-[#1c1b1b]/60 dark:text-[#fcf9f8]/60 font-medium font-['Manrope'] hover:text-[#0047FF] transition-colors duration-300" href="about.html">About</a>
+<a class="text-[#1c1b1b]/60 dark:text-[#fcf9f8]/60 font-medium font-['Manrope'] hover:text-[#0047FF] transition-colors duration-300" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-2">
+<a class="hidden sm:inline-flex items-center justify-center bg-gradient-to-br from-primary to-primary-container text-on-primary px-5 py-2.5 rounded-lg font-bold text-sm tracking-tight scale-95 hover:scale-100 duration-200 ease-in-out" href="./Resume%20-%20Aakash%20Subedi.pdf" download="Resume - Aakash Subedi.pdf">Download Resume</a>
+<button type="button" aria-label="Toggle menu" aria-expanded="false" class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg text-[#1c1b1b] dark:text-[#fcf9f8] hover:bg-surface-container-low transition-colors" data-mobile-menu-button>
+<span class="material-symbols-outlined" data-mobile-menu-icon>menu</span>
+</button>
+</div>
+</div>
+<div class="md:hidden hidden border-t border-outline-variant/20" data-mobile-menu-panel>
+<div class="px-5 sm:px-8 py-5 flex flex-col gap-1">
+<a class="py-3 text-[#1c1b1b]/80 dark:text-[#fcf9f8]/80 font-medium font-['Manrope']" href="index.html">Work</a>
+<a class="py-3 text-[#0047FF] font-bold font-['Manrope']" href="gallery.html">UI Gallery</a>
+<a class="py-3 text-[#1c1b1b]/80 dark:text-[#fcf9f8]/80 font-medium font-['Manrope']" href="about.html">About</a>
+<a class="py-3 text-[#1c1b1b]/80 dark:text-[#fcf9f8]/80 font-medium font-['Manrope']" href="contact.html">Contact</a>
+<a class="mt-2 inline-flex items-center justify-center bg-gradient-to-br from-primary to-primary-container text-on-primary px-5 py-3 rounded-lg font-bold text-sm tracking-tight" href="./Resume%20-%20Aakash%20Subedi.pdf" download="Resume - Aakash Subedi.pdf">Download Resume</a>
+</div>
+</div>
+</nav>
+</header>
+<main id="main-content" class="pt-24 md:pt-32 pb-16 md:pb-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 mb-16 md:mb-24">
+<div class="max-w-5xl">
+<span class="font-['Manrope'] text-[0.75rem] font-semibold tracking-[0.1em] uppercase text-primary mb-4 md:mb-6 block">UI Gallery</span>
+<h1 class="font-headline text-5xl sm:text-6xl md:text-8xl hero-title-bleed text-on-surface mb-6 md:mb-8 leading-[1.05]">
+                    Crafting Interfaces
+                </h1>
+<p class="font-body text-base sm:text-lg md:text-xl text-on-surface-variant leading-relaxed font-light max-w-4xl lg:max-w-5xl">
+                    A curated selection of interface work, visual systems, and screen-level decisions — from product UI to exploratory illustration.
+                </p>
+</div>
+</section>
+<!-- Filters -->
+<section class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 mb-12 md:mb-20">
+<div class="flex flex-wrap gap-2" id="gallery-filters">
+<button class="px-4 sm:px-5 py-1.5 rounded-full bg-primary text-on-primary text-[10px] font-bold tracking-widest uppercase transition-all shadow-sm" data-filter="all" type="button">All</button>
+<button class="px-4 sm:px-5 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant text-[10px] font-bold tracking-widest uppercase hover:bg-surface-container-high transition-all border border-outline-variant/10" data-filter="product" type="button">Product UI</button>
+<button class="px-4 sm:px-5 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant text-[10px] font-bold tracking-widest uppercase hover:bg-surface-container-high transition-all border border-outline-variant/10" data-filter="social" type="button">Visual / Social</button>
+<button class="px-4 sm:px-5 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant text-[10px] font-bold tracking-widest uppercase hover:bg-surface-container-high transition-all border border-outline-variant/10" data-filter="illustrations" type="button">Illustrations</button>
+</div>
+</section>
+<!-- Gallery Grid -->
+<section class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 sm:gap-x-8 md:gap-x-12 gap-y-12 md:gap-y-24">
+<!-- Item 1 -->
+<div class="group cursor-pointer" data-category="illustrations">
+<div class="gallery-image-wrapper aspect-[1/1] bg-surface-container-lowest overflow-hidden rounded-sm mb-6 transition-all duration-500">
+<img alt="Awakening" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Artwork titled Awakening from gallery collection" src="gallery/awakening.jpg"/>
+</div>
+<div class="space-y-3">
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Illustrations</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40">•</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">Photography</span>
+</div>
+<h3 class="font-headline text-2xl italic text-on-surface group-hover:text-primary transition-colors">Awakening</h3>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group cursor-pointer" data-category="social">
+<div class="gallery-image-wrapper aspect-[1/1] bg-surface-container-lowest overflow-hidden rounded-sm mb-6 transition-all duration-500">
+<img alt="Doc 127214 20230916175840 002" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Document style visual from gallery collection" src="gallery/doc12721420230916175840_002.jpg"/>
+</div>
+<div class="space-y-3">
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Visual / Social</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40">•</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">Editorial</span>
+</div>
+<h3 class="font-headline text-2xl italic text-on-surface group-hover:text-primary transition-colors">Study Abroad Post</h3>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group cursor-pointer" data-category="social">
+<div class="gallery-image-wrapper aspect-[1/1] bg-surface-container-lowest overflow-hidden rounded-sm mb-6 transition-all duration-500">
+<img alt="Egg Fact" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Educational design titled Egg Fact from gallery collection" src="gallery/eggFact.webp"/>
+</div>
+<div class="space-y-3">
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Visual / Social</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40">•</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">Educational</span>
+</div>
+<h3 class="font-headline text-2xl italic text-on-surface group-hover:text-primary transition-colors">Egg Fact</h3>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="group cursor-pointer" data-category="social">
+<div class="gallery-image-wrapper aspect-[1/1] bg-surface-container-lowest overflow-hidden rounded-sm mb-6 transition-all duration-500">
+<img alt="Ghode Jatra" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Event design titled Ghode Jatra from gallery collection" src="gallery/ghodeJatra.webp"/>
+</div>
+<div class="space-y-3">
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Visual / Social</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40">•</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">Event</span>
+</div>
+<h3 class="font-headline text-2xl italic text-on-surface group-hover:text-primary transition-colors">Ghode Jatra</h3>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="group cursor-pointer" data-category="illustrations">
+<div class="gallery-image-wrapper aspect-[1/1] bg-surface-container-lowest overflow-hidden rounded-sm mb-6 transition-all duration-500">
+<img alt="Glitched Reality" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Poster artwork titled Glitched Reality from gallery collection" src="gallery/glitchedReality.jpg"/>
+</div>
+<div class="space-y-3">
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Illustrations</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40">•</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">Poster</span>
+</div>
+<h3 class="font-headline text-2xl italic text-on-surface group-hover:text-primary transition-colors">Glitched Reality</h3>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="group cursor-pointer" data-category="social">
+<div class="gallery-image-wrapper aspect-[1/1] bg-surface-container-lowest overflow-hidden rounded-sm mb-6 transition-all duration-500">
+<img alt="Google Education" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Education themed digital design from gallery collection" src="gallery/googleEducation.webp"/>
+</div>
+<div class="space-y-3">
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Visual / Social</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40">•</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">Education</span>
+</div>
+<h3 class="font-headline text-2xl italic text-on-surface group-hover:text-primary transition-colors">Google Education</h3>
+</div>
+</div>
+<!-- Item 7 -->
+<div class="group cursor-pointer" data-category="social">
+<div class="gallery-image-wrapper aspect-[1/1] bg-surface-container-lowest overflow-hidden rounded-sm mb-6 transition-all duration-500">
+<img alt="IETS" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Promotional design titled IETS from gallery collection" src="gallery/IETS.webp"/>
+</div>
+<div class="space-y-3">
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Visual / Social</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40">•</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">Promotion</span>
+</div>
+<h3 class="font-headline text-2xl italic text-on-surface group-hover:text-primary transition-colors">IELTS Post</h3>
+</div>
+</div>
+<!-- Item 8 -->
+<div class="group cursor-pointer" data-category="illustrations">
+<div class="gallery-image-wrapper aspect-[1/1] bg-surface-container-lowest overflow-hidden rounded-sm mb-6 transition-all duration-500">
+<img alt="Lambait 1 02" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Illustrative print visual from gallery collection" src="gallery/lambait1-02.jpg"/>
+</div>
+<div class="space-y-3">
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Illustrations</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40">•</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">Illustration</span>
+</div>
+<h3 class="font-headline text-2xl italic text-on-surface group-hover:text-primary transition-colors">Lambait 1-02</h3>
+</div>
+</div>
+<!-- Item 9 -->
+<div class="group cursor-pointer" data-category="social">
+<div class="gallery-image-wrapper aspect-[1/1] bg-surface-container-lowest overflow-hidden rounded-sm mb-6 transition-all duration-500">
+<img alt="Main 01" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Campaign artwork titled Main 01 from gallery collection" src="gallery/main-01.webp"/>
+</div>
+<div class="space-y-3">
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Visual / Social</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40">•</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">Campaign</span>
+</div>
+<h3 class="font-headline text-2xl italic text-on-surface group-hover:text-primary transition-colors">Congratulations Post</h3>
+</div>
+</div>
+<!-- Item 10 -->
+<!-- <div class="group cursor-pointer" data-category="social">
+<div class="gallery-image-wrapper aspect-[1/1] bg-surface-container-lowest overflow-hidden rounded-sm mb-6 transition-all duration-500">
+<img alt="Main Aus Canada 01" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Study in Australia and Canada promotional design from gallery collection" src="gallery/main-aus-canada-01.webp"/>
+</div>
+<div class="space-y-3">
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Visual / Social</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40">•</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">Promotion</span>
+</div>
+<h3 class="font-headline text-2xl italic text-on-surface group-hover:text-primary transition-colors">Main Aus Canada 01</h3>
+</div>
+</div> -->
+<!-- Item 11 -->
+<div class="group cursor-pointer" data-category="illustrations">
+<div class="gallery-image-wrapper aspect-[1/1] bg-surface-container-lowest overflow-hidden rounded-sm mb-6 transition-all duration-500">
+<img alt="Main Firewood" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Firewood themed visual artwork from gallery collection" src="gallery/mainFirewood.jpg"/>
+</div>
+<div class="space-y-3">
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Illustrations</span>xx
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40">•</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">Artwork</span>
+</div>
+<h3 class="font-headline text-2xl italic text-on-surface group-hover:text-primary transition-colors">Main Firewood</h3>
+</div>
+</div>
+<!-- Item 12 -->
+<div class="group cursor-pointer" data-category="social">
+<div class="gallery-image-wrapper aspect-[1/1] bg-surface-container-lowest overflow-hidden rounded-sm mb-6 transition-all duration-500">
+<img alt="Mini Bet" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Mini Bet promotional graphic from gallery collection" src="gallery/miniBet.png"/>
+</div>
+<div class="space-y-3">
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Visual / Social</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40">•</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">Campaign</span>
+</div>
+<h3 class="font-headline text-2xl italic text-on-surface group-hover:text-primary transition-colors">Mini Bet</h3>
+</div>
+</div>
+<!-- Item 13 -->
+<div class="group cursor-pointer" data-category="social">
+<div class="gallery-image-wrapper aspect-[1/1] bg-surface-container-lowest overflow-hidden rounded-sm mb-6 transition-all duration-500">
+<img alt="Montessori Ad" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Montessori ad design from gallery collection" src="gallery/Montessori_ad.webp"/>
+</div>
+<div class="space-y-3">
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Visual / Social</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40">•</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">Education</span>
+</div>
+<h3 class="font-headline text-2xl italic text-on-surface group-hover:text-primary transition-colors">Montessori Ad</h3>
+</div>
+</div>
+<!-- Item 14 -->
+<div class="group cursor-pointer" data-category="social">
+<div class="gallery-image-wrapper aspect-[1/1] bg-surface-container-lowest overflow-hidden rounded-sm mb-6 transition-all duration-500">
+<img alt="Montessori Puja" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Montessori puja announcement design from gallery collection" src="gallery/Montessori_puja.webp"/>
+</div>
+<div class="space-y-3">
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Visual / Social</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40">•</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">Event</span>
+</div>
+<h3 class="font-headline text-2xl italic text-on-surface group-hover:text-primary transition-colors">Montessori Puja</h3>
+</div>
+</div>
+<!-- Item 15 -->
+<div class="group cursor-pointer" data-category="illustrations">
+<div class="gallery-image-wrapper aspect-[1/1] bg-surface-container-lowest overflow-hidden rounded-sm mb-6 transition-all duration-500">
+<img alt="Nepse SubIndex" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Nepse subindex infographic design from gallery collection" src="gallery/nepse_SubIndex.png"/>
+</div>
+<div class="space-y-3">
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Illustrations</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40">•</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">Infographic</span>
+</div>
+<h3 class="font-headline text-2xl italic text-on-surface group-hover:text-primary transition-colors">Nepse SubIndex</h3>
+</div>
+</div>
+<!-- Item 16 -->
+<div class="group cursor-pointer" data-category="illustrations">
+<div class="gallery-image-wrapper aspect-[1/1] bg-surface-container-lowest overflow-hidden rounded-sm mb-6 transition-all duration-500">
+<img alt="One Piece" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="One Piece inspired illustration from gallery collection" src="gallery/onePiece.jpg"/>
+</div>
+<div class="space-y-3">
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Illustrations</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40">•</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">Fan Art</span>
+</div>
+<h3 class="font-headline text-2xl italic text-on-surface group-hover:text-primary transition-colors">One Piece</h3>
+</div>
+</div>
+<!-- Item 17 -->
+<div class="group cursor-pointer" data-category="illustrations">
+<div class="gallery-image-wrapper aspect-[1/1] bg-surface-container-lowest overflow-hidden rounded-sm mb-6 transition-all duration-500">
+<img alt="TCC Flyer" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="TCC flyer design from gallery collection" src="gallery/TCC_flyer.webp"/>
+</div>
+<div class="space-y-3">
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Illustrations</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40">•</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">Flyer</span>
+</div>
+<h3 class="font-headline text-2xl italic text-on-surface group-hover:text-primary transition-colors">TCC Flyer</h3>
+</div>
+</div>
+<!-- Item 18 -->
+<div class="group cursor-pointer" data-category="social">
+<div class="gallery-image-wrapper aspect-[1/1] bg-surface-container-lowest overflow-hidden rounded-sm mb-6 transition-all duration-500">
+<img alt="Vivo Holi" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Vivo Holi campaign visual from gallery collection" src="gallery/vivoHoli.jpg"/>
+</div>
+<div class="space-y-3">
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Visual / Social</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40">•</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">Festival</span>
+</div>
+<h3 class="font-headline text-2xl italic text-on-surface group-hover:text-primary transition-colors">Vivo Holi</h3>
+</div>
+</div>
+<!-- Item 19 -->
+<div class="group cursor-pointer" data-category="social">
+<div class="gallery-image-wrapper aspect-[1/1] bg-surface-container-lowest overflow-hidden rounded-sm mb-6 transition-all duration-500">
+<img alt="Vivo Inspiration" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Vivo inspiration campaign graphic from gallery collection" src="gallery/vivoInspiration.jpg"/>
+</div>
+<div class="space-y-3">
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Visual / Social</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40">•</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">Campaign</span>
+</div>
+<h3 class="font-headline text-2xl italic text-on-surface group-hover:text-primary transition-colors">Vivo Inspiration</h3>
+</div>
+</div>
+<!-- Item 20 -->
+<div class="group cursor-pointer" data-category="social">
+<div class="gallery-image-wrapper aspect-[1/1] bg-surface-container-lowest overflow-hidden rounded-sm mb-6 transition-all duration-500">
+<img alt="Vivo NY" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Vivo New Year campaign graphic from gallery collection" src="gallery/vivoNY.jpg"/>
+</div>
+<div class="space-y-3">
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Visual / Social</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/40">•</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">Celebration</span>
+</div>
+<h3 class="font-headline text-2xl italic text-on-surface group-hover:text-primary transition-colors">Vivo NY</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<!-- <section class="mt-48 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+<div class="border-t border-outline-variant/10 pt-24 text-center">
+<h2 class="font-headline text-5xl md:text-6xl mb-10 max-w-3xl mx-auto text-on-surface">Want the full story behind these screens?</h2>
+<div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+<a class="inline-flex items-center justify-center w-full sm:w-auto px-10 py-4 bg-primary text-on-primary rounded-md font-bold text-xs uppercase tracking-widest transition-all hover:bg-primary-container" href="index.html">View Work</a>
+<button class="w-full sm:w-auto px-10 py-4 border border-outline-variant text-on-surface rounded-md font-bold text-xs uppercase tracking-widest hover:bg-surface-container-low transition-all">
+                        Explore Case Studies
+                    </button>
+</div>
+</div>
+</section> -->
+</main>
+<!-- Footer -->
+<footer class="bg-stone-900 dark:bg-black w-full py-12 md:py-16 px-5 sm:px-8 lg:px-12 mt-16 md:mt-24">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0 max-w-7xl mx-auto w-full">
+<div class="font-['Manrope'] text-[10px] sm:text-xs tracking-widest uppercase text-stone-400 text-center md:text-left">
+                © 2026 Aakash Subedi. All rights reserved.
+            </div>
+<nav aria-label="Footer" class="flex flex-wrap justify-center gap-5 sm:gap-8">
+<a class="font-['Manrope'] text-[10px] sm:text-xs tracking-widest uppercase text-stone-500 hover:text-white transition-colors" href="index.html">Work</a>
+<a class="font-['Manrope'] text-[10px] sm:text-xs tracking-widest uppercase text-white font-bold" href="gallery.html">UI Gallery</a>
+<a class="font-['Manrope'] text-[10px] sm:text-xs tracking-widest uppercase text-stone-500 hover:text-white transition-colors" href="about.html">About</a>
+<a class="font-['Manrope'] text-[10px] sm:text-xs tracking-widest uppercase text-stone-500 hover:text-white transition-colors" href="contact.html">Contact</a>
+<a class="font-['Manrope'] text-[10px] sm:text-xs tracking-widest uppercase text-stone-500 hover:text-white transition-colors" href="https://www.linkedin.com/in/aakashsubedi007/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+</nav>
+</div>
+</footer>
+<script>
+      (function () {
+        const filters = document.getElementById("gallery-filters");
+        const buttons = filters ? Array.from(filters.querySelectorAll("button[data-filter]")) : [];
+        const cards = Array.from(document.querySelectorAll("[data-category]"));
+        const activeClasses = ["bg-primary", "text-on-primary", "shadow-sm"];
+        const inactiveClasses = ["bg-surface-container-low", "text-on-surface-variant"];
+
+        function setActiveButton(activeFilter) {
+          buttons.forEach((button) => {
+            const isActive = button.dataset.filter === activeFilter;
+            button.classList.toggle("bg-primary", isActive);
+            button.classList.toggle("text-on-primary", isActive);
+            button.classList.toggle("shadow-sm", isActive);
+            button.classList.toggle("bg-surface-container-low", !isActive);
+            button.classList.toggle("text-on-surface-variant", !isActive);
+          });
+        }
+
+        function applyFilter(filterValue) {
+          const normalized = (filterValue || "all").toLowerCase();
+          cards.forEach((card) => {
+            const category = (card.getAttribute("data-category") || "").toLowerCase();
+            const visible = normalized === "all" || category === normalized;
+            card.classList.toggle("hidden", !visible);
+          });
+          setActiveButton(normalized);
+        }
+
+        if (!filters || buttons.length === 0 || cards.length === 0) return;
+
+        filters.addEventListener("click", (event) => {
+          const target = event.target.closest("button[data-filter]");
+          if (!target) return;
+          applyFilter(target.dataset.filter);
+        });
+
+        applyFilter("all");
+      })();
+
+      (function () {
+        const lightbox = document.getElementById("lightbox");
+        if (!lightbox) return;
+
+        const imageEl = lightbox.querySelector("[data-lightbox-image]");
+        const titleEl = lightbox.querySelector("[data-lightbox-title]");
+        const categoryEl = lightbox.querySelector("[data-lightbox-category]");
+        const subcategoryEl = lightbox.querySelector("[data-lightbox-subcategory]");
+        const counterEl = lightbox.querySelector("[data-lightbox-counter]");
+        const scrollEl = lightbox.querySelector("[data-lightbox-scroll]");
+        const closeButtons = lightbox.querySelectorAll("[data-lightbox-close]");
+        const prevButtons = lightbox.querySelectorAll("[data-lightbox-prev]");
+        const nextButtons = lightbox.querySelectorAll("[data-lightbox-next]");
+        const zoomInButtons = lightbox.querySelectorAll("[data-lightbox-zoom-in]");
+        const zoomOutButtons = lightbox.querySelectorAll("[data-lightbox-zoom-out]");
+        const zoomResetButtons = lightbox.querySelectorAll("[data-lightbox-zoom-reset]");
+
+        const allCards = Array.from(document.querySelectorAll("[data-category]"));
+        let activeCards = [];
+        let currentIndex = 0;
+        let zoom = 1;
+        const ZOOM_STEP = 0.25;
+        const ZOOM_MIN = 1;
+        const ZOOM_MAX = 4;
+
+        function getVisibleCards() {
+          return allCards.filter((card) => !card.classList.contains("hidden"));
+        }
+
+        function extractCardData(card) {
+          const img = card.querySelector("img");
+          const title = card.querySelector("h3");
+          const labels = card.querySelectorAll("div.flex.gap-2 > span");
+          const category = labels[0] ? labels[0].textContent.trim() : "";
+          const subcategory = labels[2] ? labels[2].textContent.trim() : "";
+          return {
+            src: img ? img.getAttribute("src") : "",
+            alt: img ? (img.getAttribute("alt") || "") : "",
+            title: title ? title.textContent.trim() : "",
+            category: category,
+            subcategory: subcategory,
+          };
+        }
+
+        function applyZoom() {
+          if (zoom <= 1) {
+            imageEl.style.width = "";
+            imageEl.style.height = "";
+            imageEl.style.maxWidth = "";
+            imageEl.style.maxHeight = "";
+            imageEl.style.cursor = "";
+          } else {
+            const natW = imageEl.naturalWidth || imageEl.clientWidth;
+            imageEl.style.maxWidth = "none";
+            imageEl.style.maxHeight = "none";
+            imageEl.style.width = (natW * zoom) + "px";
+            imageEl.style.height = "auto";
+            imageEl.style.cursor = "grab";
+          }
+          zoomOutButtons.forEach((b) => { b.disabled = zoom <= ZOOM_MIN; });
+          zoomInButtons.forEach((b) => { b.disabled = zoom >= ZOOM_MAX; });
+          zoomResetButtons.forEach((b) => { b.disabled = zoom === 1; });
+        }
+
+        function resetZoom() {
+          zoom = 1;
+          applyZoom();
+        }
+
+        function zoomIn() {
+          zoom = Math.min(ZOOM_MAX, +(zoom + ZOOM_STEP).toFixed(2));
+          applyZoom();
+        }
+
+        function zoomOut() {
+          zoom = Math.max(ZOOM_MIN, +(zoom - ZOOM_STEP).toFixed(2));
+          applyZoom();
+        }
+
+        function render() {
+          if (activeCards.length === 0) return;
+          const data = extractCardData(activeCards[currentIndex]);
+          resetZoom();
+          imageEl.setAttribute("src", data.src);
+          imageEl.setAttribute("alt", data.alt);
+          titleEl.textContent = data.title;
+          categoryEl.textContent = data.category;
+          subcategoryEl.textContent = data.subcategory;
+          counterEl.textContent = (currentIndex + 1) + " / " + activeCards.length;
+          if (scrollEl) {
+            scrollEl.scrollTop = 0;
+            scrollEl.scrollLeft = 0;
+          }
+        }
+
+        function openLightbox(card) {
+          activeCards = getVisibleCards();
+          const idx = activeCards.indexOf(card);
+          currentIndex = idx === -1 ? 0 : idx;
+          lightbox.classList.remove("hidden");
+          document.body.style.overflow = "hidden";
+          render();
+        }
+
+        function closeLightbox() {
+          lightbox.classList.add("hidden");
+          document.body.style.overflow = "";
+          resetZoom();
+        }
+
+        function showPrev() {
+          if (activeCards.length === 0) return;
+          currentIndex = (currentIndex - 1 + activeCards.length) % activeCards.length;
+          render();
+        }
+
+        function showNext() {
+          if (activeCards.length === 0) return;
+          currentIndex = (currentIndex + 1) % activeCards.length;
+          render();
+        }
+
+        allCards.forEach((card) => {
+          card.addEventListener("click", () => openLightbox(card));
+          card.setAttribute("tabindex", "0");
+          card.setAttribute("role", "button");
+          card.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              openLightbox(card);
+            }
+          });
+        });
+
+        closeButtons.forEach((btn) => btn.addEventListener("click", closeLightbox));
+        prevButtons.forEach((btn) => btn.addEventListener("click", (e) => { e.stopPropagation(); showPrev(); }));
+        nextButtons.forEach((btn) => btn.addEventListener("click", (e) => { e.stopPropagation(); showNext(); }));
+        zoomInButtons.forEach((btn) => btn.addEventListener("click", (e) => { e.stopPropagation(); zoomIn(); }));
+        zoomOutButtons.forEach((btn) => btn.addEventListener("click", (e) => { e.stopPropagation(); zoomOut(); }));
+        zoomResetButtons.forEach((btn) => btn.addEventListener("click", (e) => { e.stopPropagation(); resetZoom(); }));
+
+        if (scrollEl) {
+          scrollEl.addEventListener("click", (event) => {
+            if (event.target === imageEl) return;
+            closeLightbox();
+          });
+        }
+
+        // Click-and-drag panning when zoomed
+        if (scrollEl) {
+          let isPanning = false;
+          let startX = 0, startY = 0, startLeft = 0, startTop = 0;
+          imageEl.addEventListener("mousedown", (event) => {
+            if (zoom <= 1) return;
+            isPanning = true;
+            startX = event.clientX;
+            startY = event.clientY;
+            startLeft = scrollEl.scrollLeft;
+            startTop = scrollEl.scrollTop;
+            imageEl.style.cursor = "grabbing";
+            event.preventDefault();
+          });
+          window.addEventListener("mousemove", (event) => {
+            if (!isPanning) return;
+            scrollEl.scrollLeft = startLeft - (event.clientX - startX);
+            scrollEl.scrollTop = startTop - (event.clientY - startY);
+          });
+          window.addEventListener("mouseup", () => {
+            if (!isPanning) return;
+            isPanning = false;
+            imageEl.style.cursor = zoom > 1 ? "grab" : "";
+          });
+        }
+
+        // Wheel / Ctrl+wheel to zoom
+        if (scrollEl) {
+          scrollEl.addEventListener("wheel", (event) => {
+            if (!event.ctrlKey && !event.metaKey) return;
+            event.preventDefault();
+            if (event.deltaY < 0) zoomIn();
+            else zoomOut();
+          }, { passive: false });
+        }
+
+        document.addEventListener("keydown", (event) => {
+          if (lightbox.classList.contains("hidden")) return;
+          if (event.key === "Escape") closeLightbox();
+          else if (event.key === "ArrowLeft") showPrev();
+          else if (event.key === "ArrowRight") showNext();
+          else if (event.key === "+" || event.key === "=") { event.preventDefault(); zoomIn(); }
+          else if (event.key === "-" || event.key === "_") { event.preventDefault(); zoomOut(); }
+          else if (event.key === "0") { event.preventDefault(); resetZoom(); }
+        });
+      })();
+
+      (function () {
+        const btn = document.querySelector("[data-mobile-menu-button]");
+        const panel = document.querySelector("[data-mobile-menu-panel]");
+        const icon = document.querySelector("[data-mobile-menu-icon]");
+        if (!btn || !panel) return;
+        btn.addEventListener("click", () => {
+          const willOpen = panel.classList.contains("hidden");
+          panel.classList.toggle("hidden", !willOpen);
+          btn.setAttribute("aria-expanded", willOpen ? "true" : "false");
+          if (icon) icon.textContent = willOpen ? "close" : "menu";
+        });
+      })();
+    </script>
+<!-- Lightbox (full-screen) -->
+<div aria-modal="true" role="dialog" aria-labelledby="lightbox-title" class="fixed inset-0 z-[100] bg-black/95 backdrop-blur-md hidden" id="lightbox">
+<!-- Scrollable viewport: holds the image; scrollbars appear when zoomed past the screen -->
+<div class="absolute inset-0 overflow-auto overscroll-contain" data-lightbox-scroll>
+<div class="min-h-full min-w-full flex items-center justify-center p-0">
+<img alt="" class="block max-w-full max-h-screen w-auto h-auto object-contain select-none" data-lightbox-image draggable="false" src=""/>
+</div>
+</div>
+<!-- Top overlay: title (left) + controls (right) -->
+<div class="absolute top-0 left-0 right-0 z-20 pointer-events-none bg-gradient-to-b from-black/70 via-black/30 to-transparent">
+<div class="flex items-start justify-between gap-3 md:gap-4 p-3 sm:p-5 md:p-6 pointer-events-auto">
+<div class="min-w-0 flex-1">
+<h2 id="lightbox-title" class="font-headline text-base sm:text-xl md:text-2xl italic text-white truncate" data-lightbox-title>Awakening</h2>
+<div class="mt-1 flex items-center gap-1.5 sm:gap-2 flex-wrap">
+<span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary-fixed-dim" data-lightbox-category>Visual</span>
+<span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.2em] text-white/20">•</span>
+<span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60" data-lightbox-subcategory>Photography</span>
+<span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.2em] text-white/20">•</span>
+<span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60" data-lightbox-counter>1 / 20</span>
+</div>
+</div>
+<div class="flex items-center gap-1 sm:gap-2 shrink-0">
+<button aria-label="Zoom out" title="Zoom out (-)" class="text-white/70 hover:text-white transition-colors bg-white/5 hover:bg-white/15 rounded-full w-9 h-9 sm:w-11 sm:h-11 flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed" data-lightbox-zoom-out>
+<span class="material-symbols-outlined text-xl sm:text-2xl">zoom_out</span>
+</button>
+<button aria-label="Zoom in" title="Zoom in (+)" class="text-white/70 hover:text-white transition-colors bg-white/5 hover:bg-white/15 rounded-full w-9 h-9 sm:w-11 sm:h-11 flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed" data-lightbox-zoom-in>
+<span class="material-symbols-outlined text-xl sm:text-2xl">zoom_in</span>
+</button>
+<button aria-label="Reset zoom" title="Fit to screen (0)" class="hidden md:flex text-white/70 hover:text-white transition-colors bg-white/5 hover:bg-white/15 rounded-full w-11 h-11 items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed" data-lightbox-zoom-reset>
+<span class="material-symbols-outlined text-2xl">fit_screen</span>
+</button>
+<span class="hidden sm:block mx-1 h-6 w-px bg-white/10"></span>
+<button aria-label="Close image viewer" title="Close (Esc)" class="text-white/70 hover:text-white transition-colors bg-white/5 hover:bg-white/15 rounded-full w-9 h-9 sm:w-11 sm:h-11 flex items-center justify-center" data-lightbox-close>
+<span class="material-symbols-outlined text-xl sm:text-2xl">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Side navigation -->
+<button aria-label="Previous image" title="Previous (←)" class="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 z-20 text-white/70 hover:text-white transition-colors bg-black/40 hover:bg-white/15 rounded-full w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 flex items-center justify-center backdrop-blur-sm" data-lightbox-prev>
+<span class="material-symbols-outlined text-2xl sm:text-3xl md:text-4xl">chevron_left</span>
+</button>
+<button aria-label="Next image" title="Next (→)" class="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 z-20 text-white/70 hover:text-white transition-colors bg-black/40 hover:bg-white/15 rounded-full w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 flex items-center justify-center backdrop-blur-sm" data-lightbox-next>
+<span class="material-symbols-outlined text-2xl sm:text-3xl md:text-4xl">chevron_right</span>
+</button>
+</div>
+</body></html>
