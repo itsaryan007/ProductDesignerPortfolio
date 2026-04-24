@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/0.9">
   <url>
@@ -7,11 +7,11 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://www.aakashsubedi.com/display.jpg</image:loc>
-      <image:title>Aakash Subedi — Product Designer</image:title>
+      <image:title>Aakash Subedi â€” Product Designer</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://www.aakashsubedi.com/about.htm</loc>
+    <loc>https://www.aakashsubedi.com/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -20,31 +20,31 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.aakashsubedi.com/gallery.html</loc>
+    <loc>https://www.aakashsubedi.com/gallery</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.aakashsubedi.com/contact.html</loc>
+    <loc>https://www.aakashsubedi.com/contact</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.aakashsubedi.com/inksvilla.htm</loc>
+    <loc>https://www.aakashsubedi.com/inksvilla</loc>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://www.aakashsubedi.com/thumbnail/inksvilla.png</image:loc>
-      <image:title>Inksvilla — two-sided tattoo marketplace case study</image:title>
+      <image:title>Inksvilla â€” two-sided tattoo marketplace case study</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://www.aakashsubedi.com/khabar.html</loc>
+    <loc>https://www.aakashsubedi.com/khabar</loc>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://www.aakashsubedi.com/thumbnail/khabar.png</image:loc>
-      <image:title>Khabar — digital news reader case study</image:title>
+      <image:title>Khabar â€” digital news reader case study</image:title>
     </image:image>
   </url>
 </urlset>

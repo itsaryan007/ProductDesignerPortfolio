@@ -1,0 +1,12 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/about.html", "destination": "/about", "permanent": true },
+    { "source": "/contact.html", "destination": "/contact", "permanent": true },
+    { "source": "/gallery.html", "destination": "/gallery", "permanent": true },
+    { "source": "/inksvilla.html", "destination": "/inksvilla", "permanent": true },
+    { "source": "/khabar.html", "destination": "/khabar", "permanent": true }
+  ]
+}
