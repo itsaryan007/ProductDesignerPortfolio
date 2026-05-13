@@ -27,8 +27,8 @@
         <meta name="twitter:description" content="Case study: a cleaner and more personalized mobile news experience for Nepalese readers."/>
         <meta name="twitter:image" content="https://www.aakashsubedi.com/thumbnail/khabar.png"/>
         <meta name="twitter:image:alt" content="Khabar personalized mobile news case study"/>
-        <link rel="icon" type="image/png" sizes="any" href="/Logo.png"/>
-        <link rel="apple-touch-icon" href="/Logo.png"/>
+        <link rel="icon" type="image/png" sizes="any" href="Logo.png"/>
+        <link rel="apple-touch-icon" href="Logo.png"/>
         <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -205,32 +205,37 @@
 </head><body class="bg-surface text-on-surface font-body antialiased overflow-x-hidden">
         <a href="#main-content" class="skip-to-content">Skip to main content</a>
         <!-- TopNavBar -->
-        <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(28,27,27,0.04)] dark:shadow-none transition-transform duration-200">
-        <div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
-        <a href="/" aria-label="Aakash Subedi home" class="flex items-center no-underline">
+        <header>
+        <nav aria-label="Primary" class="fixed top-0 left-0 right-0 w-full z-50 bg-[#fcf9f8]/80 dark:bg-[#1c1b1b]/80 backdrop-blur-xl">
+        <div class="max-w-7xl mx-auto w-full px-5 sm:px-8 lg:px-12 flex justify-between items-center py-4 md:py-6">
+        <a href="index.html" aria-label="Aakash Subedi home" class="flex items-center no-underline">
         <img src="Logo-wh.png" alt="Aakash Subedi" class="h-8 md:h-9 w-auto object-contain"/>
         </a>
-        <div class="hidden md:flex space-x-8 font-['Manrope'] tracking-tight">
-        <a class="text-stone-600 dark:text-stone-400 font-medium hover:text-stone-900 dark:hover:text-stone-100 transition-colors hover:opacity-80 transition-opacity" href="/">Work</a>
-        <a class="text-blue-600 dark:text-blue-500 font-bold border-b-2 border-blue-600 pb-1 hover:opacity-80 transition-opacity" href="/gallery">UI Gallery</a>
-        <a class="text-stone-600 dark:text-stone-400 font-medium hover:text-stone-900 dark:hover:text-stone-100 transition-colors hover:opacity-80 transition-opacity" href="/about">About</a>
-        <a class="text-stone-600 dark:text-stone-400 font-medium hover:text-stone-900 dark:hover:text-stone-100 transition-colors hover:opacity-80 transition-opacity" href="/contact">Contact</a>
+        <div class="hidden md:flex items-center gap-10">
+        <a class="text-[#0047FF] font-bold border-b-2 border-[#0047FF] pb-1 transition-colors duration-300" href="index.html">Work</a>
+        <a class="text-[#1c1b1b]/60 dark:text-[#fcf9f8]/60 font-medium font-['Manrope'] hover:text-[#0047FF] transition-colors duration-300" href="gallery.html">UI Gallery</a>
+        <a class="text-[#1c1b1b]/60 dark:text-[#fcf9f8]/60 font-medium font-['Manrope'] hover:text-[#0047FF] transition-colors duration-300" href="about.html">About</a>
+        <a class="text-[#1c1b1b]/60 dark:text-[#fcf9f8]/60 font-medium font-['Manrope'] hover:text-[#0047FF] transition-colors duration-300" href="contact.html">Contact</a>
         </div>
-        <button class="hidden md:block px-6 py-2 bg-gradient-to-br from-primary to-primary-container text-on-primary rounded-md font-bold text-sm tracking-wide shadow-ambient hover:opacity-90 transition-opacity">Download Resume</button>
+        <div class="flex items-center gap-2">
+        <a class="hidden sm:inline-flex items-center justify-center bg-gradient-to-br from-primary to-primary-container text-on-primary px-5 py-2.5 rounded-lg font-bold text-sm tracking-tight scale-95 hover:scale-100 duration-200 ease-in-out" href="./Resume%20-%20Aakash%20Subedi.pdf" download="Resume - Aakash Subedi.pdf">Download Resume</a>
         <button type="button" aria-label="Toggle menu" aria-expanded="false" class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg text-[#1c1b1b] dark:text-[#fcf9f8] hover:bg-surface-container-low transition-colors" data-mobile-menu-button>
-        <span class="material-symbols-outlined">menu</span>
+        <span class="material-symbols-outlined" data-mobile-menu-icon>menu</span>
         </button>
         </div>
+        </div>
         <div class="md:hidden hidden border-t border-outline-variant/20" data-mobile-menu-panel>
-        <div class="max-w-7xl mx-auto px-8 py-4 flex flex-col gap-3 font-['Manrope'] tracking-tight">
-        <a class="text-stone-600 font-medium hover:text-stone-900 transition-colors" href="/">Work</a>
-        <a class="text-blue-600 font-bold hover:opacity-80 transition-opacity" href="/gallery">UI Gallery</a>
-        <a class="text-stone-600 font-medium hover:text-stone-900 transition-colors" href="/about">About</a>
-        <a class="text-stone-600 font-medium hover:text-stone-900 transition-colors" href="/contact">Contact</a>
+        <div class="px-5 sm:px-8 py-5 flex flex-col gap-1">
+        <a class="py-3 text-[#0047FF] font-bold font-['Manrope']" href="index.html">Work</a>
+        <a class="py-3 text-[#1c1b1b]/80 dark:text-[#fcf9f8]/80 font-medium font-['Manrope']" href="gallery.html">UI Gallery</a>
+        <a class="py-3 text-[#1c1b1b]/80 dark:text-[#fcf9f8]/80 font-medium font-['Manrope']" href="about.html">About</a>
+        <a class="py-3 text-[#1c1b1b]/80 dark:text-[#fcf9f8]/80 font-medium font-['Manrope']" href="contact.html">Contact</a>
+        <a class="mt-2 inline-flex items-center justify-center bg-gradient-to-br from-primary to-primary-container text-on-primary px-5 py-3 rounded-lg font-bold text-sm tracking-tight" href="./Resume%20-%20Aakash%20Subedi.pdf" download="Resume - Aakash Subedi.pdf">Download Resume</a>
         </div>
         </div>
         </nav>
-        <main id="main-content" class="pt-32 pb-24 max-w-7xl mx-auto px-6 md:px-8">
+        </header>
+        <main id="main-content" class="pt-24 md:pt-32 pb-24 max-w-7xl mx-auto px-6 md:px-8">
         <!-- 1. Hero Section -->
         <section class="mb-24 flex flex-col md:flex-row items-center gap-12 relative">
         <div class="md:w-1/2 z-10">
@@ -715,11 +720,11 @@
 <!-- 11. Navigation -->
 <section class="py-16 md:py-24 px-5 sm:px-8 border-t border-outline-variant/10">
 <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 md:gap-12">
-<a class="group text-left" href="/inksvilla">
+<a class="group text-left" href="inksvilla.html">
 <span class="font-label text-xs uppercase text-secondary block mb-2">Previous Project</span>
 <span class="font-headline text-3xl sm:text-4xl md:text-5xl font-bold group-hover:text-primary transition-colors">← Inksvilla</span>
 </a>
-<a class="font-label text-sm uppercase font-black border-b-2 border-on-surface pb-1 hover:text-primary hover:border-primary transition-all" href="/">Explore All Work</a>
+<a class="font-label text-sm uppercase font-black border-b-2 border-on-surface pb-1 hover:text-primary hover:border-primary transition-all" href="index.html">Explore All Work</a>
 </div>
 </section>
 </main>
@@ -730,10 +735,10 @@
                 © 2026 Aakash Subedi. All rights reserved.
             </div>
 <nav aria-label="Footer" class="flex flex-wrap justify-center gap-5 sm:gap-8">
-<a class="font-['Manrope'] text-[10px] sm:text-xs tracking-widest uppercase text-white font-bold" href="/">Work</a>
-<a class="font-['Manrope'] text-[10px] sm:text-xs tracking-widest uppercase text-stone-500 hover:text-white transition-colors" href="/gallery">UI Gallery</a>
-<a class="font-['Manrope'] text-[10px] sm:text-xs tracking-widest uppercase text-stone-500 hover:text-white transition-colors" href="/about">About</a>
-<a class="font-['Manrope'] text-[10px] sm:text-xs tracking-widest uppercase text-stone-500 hover:text-white transition-colors" href="/contact">Contact</a>
+<a class="font-['Manrope'] text-[10px] sm:text-xs tracking-widest uppercase text-white font-bold" href="index.html">Work</a>
+<a class="font-['Manrope'] text-[10px] sm:text-xs tracking-widest uppercase text-stone-500 hover:text-white transition-colors" href="gallery.html">UI Gallery</a>
+<a class="font-['Manrope'] text-[10px] sm:text-xs tracking-widest uppercase text-stone-500 hover:text-white transition-colors" href="about.html">About</a>
+<a class="font-['Manrope'] text-[10px] sm:text-xs tracking-widest uppercase text-stone-500 hover:text-white transition-colors" href="contact.html">Contact</a>
 <a class="font-['Manrope'] text-[10px] sm:text-xs tracking-widest uppercase text-stone-500 hover:text-white transition-colors" href="https://www.linkedin.com/in/aakashsubedi007/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
 </nav>
 </div>
@@ -742,11 +747,13 @@
       (function () {
         const btn = document.querySelector("[data-mobile-menu-button]");
         const panel = document.querySelector("[data-mobile-menu-panel]");
+        const icon = document.querySelector("[data-mobile-menu-icon]");
         if (!btn || !panel) return;
         btn.addEventListener("click", () => {
           const willOpen = panel.classList.contains("hidden");
           panel.classList.toggle("hidden", !willOpen);
           btn.setAttribute("aria-expanded", willOpen ? "true" : "false");
+          if (icon) icon.textContent = willOpen ? "close" : "menu";
         });
       })();
     </script>
